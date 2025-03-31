@@ -33,7 +33,7 @@
     "prettier": "3.4.2"
   },
   "engines": {
-    "node": ">=18.19.0"
+    "node": ">=20"
   },
   "packageManager": "pnpm@10.7.0"
 }
