@@ -32,6 +32,7 @@ const qrcodeOption = computed(() => [
 
 <template>
   <footer class="page-footer">
+    <!--
     <div v-if="frontmatter.home" class="container">
       <div class="links">
         <template v-for="item in linkOption" :key="item.title">
@@ -75,6 +76,7 @@ const qrcodeOption = computed(() => [
         </div>
       </div>
     </div>
+    -->
     <div class="copyright">
       <div>
         <h3 class="foot-org-title">开源宁波（NBopen）社区</h3>
