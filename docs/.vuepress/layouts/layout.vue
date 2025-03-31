@@ -5,7 +5,6 @@ import { ref, watch } from "vue";
 import CommonWrapper from "@theme-hope/components/CommonWrapper";
 import HomePage from "@theme-hope/components/HomePage";
 import NormalPage from "@theme-hope/components/NormalPage";
-import Navbar from "@theme-hope/components/PageNav";
 import SkipLink from "@theme-hope/components/SkipLink";
 import { FadeSlideY } from "@theme-hope/components/transitions/index";
 
