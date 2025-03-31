@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { usePageData, usePageFrontmatter, useRoutePath } from "vuepress/client";
-import { ref, watch } from "vue";
+import { usePageData, usePageFrontmatter } from "vuepress/client";
 
 import CommonWrapper from "@theme-hope/components/CommonWrapper";
 import HomePage from "@theme-hope/components/HomePage";
@@ -12,7 +11,7 @@ import type { ThemePageFrontmatter } from "vuepress-theme-hope";
 
 const frontmatter = usePageFrontmatter<ThemePageFrontmatter>();
 const page = usePageData();
-
+//
 </script>
 <template>
   <SkipLink />
