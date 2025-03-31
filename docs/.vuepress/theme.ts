@@ -6,7 +6,7 @@ import { getAllFrontmatter } from "./getAllFrontmatter.js";
 
 export default hopeTheme(
   {
-    hostname: "https://nbopen.github.io/",
+    hostname: "https://nbopen.github.io/nbopen-site",
     logo: "/img/opennb.svg",
 
     repo: "https://github.com/tianyios",
