@@ -52,6 +52,9 @@ export default defineUserConfig({
       plugins: [
         ElementPlus()
       ],
+      ssr: {
+        noExternal: ['workbox-window', /vue-i18n/, /element-plus/],
+      },
     },
     vuePluginOptions: {
       
