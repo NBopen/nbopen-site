@@ -1,0 +1,28 @@
+<script setup lang="ts">
+import { usePageData, usePageFrontmatter, useRoutePath } from "vuepress/client";
+import { ref, watch } from "vue";
+
+import CommonWrapper from "@theme-hope/components/CommonWrapper";
+import HomePage from "@theme-hope/components/HomePage";
+import NormalPage from "@theme-hope/components/NormalPage";
+import Navbar from "@theme-hope/components/PageNav";
+import SkipLink from "@theme-hope/components/SkipLink";
+import { FadeSlideY } from "@theme-hope/components/transitions/index";
+
+import type { ThemePageFrontmatter } from "vuepress-theme-hope";
+
+const frontmatter = usePageFrontmatter<ThemePageFrontmatter>();
+const page = usePageData();
+
+</script>
+<template>
+  <SkipLink />
+  <CommonWrapper>
+    <template #default>
+      <HomePage v-if="frontmatter.home" />
+      <FadeSlideY v-else>
+        <NormalPage :key="page.path" />
+      </FadeSlideY>
+    </template>
+  </CommonWrapper>
+</template>

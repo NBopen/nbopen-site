@@ -1,0 +1,190 @@
+@use "@sass-palette/hope-config";
+
+
+
+body {
+  @media (min-width: 1440px) {
+    font-size: 16px;
+  }
+}
+
+.vp-hero-action.primary:hover {
+  background-color: #303033;
+}
+.vp-hero-action.primary {
+  //margin-top: 30px;
+  border-color: #0b1117;
+  background-color: #303033;
+}
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+// home page
+.vp-project-home {
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  h2 {
+    border-bottom: none;
+  }
+}
+
+
+#main-description {
+  margin: 0 auto;
+  //font-size: 20px;
+}
+
+.vp-actions {
+  margin-left: -10px;
+}
+
+.vp-action.primary {
+}
+
+.vp-features{
+  margin: -15rem auto;
+}
+.vp-features {
+  &:first-child {
+    border-top: none;
+  }
+}
+
+.vp-feature-item{
+  background: #fff;
+}
+
+.vp-feature-item {
+  &:hover {
+    background-color: #f3f3f3;
+    cursor: pointer;
+  }
+
+ 
+
+  .vp-feature-details {
+    font-weight: 600;
+    border-color: #21d789;
+  }
+}
+
+[vp-content].custom {
+  padding: 0 5rem;
+}
+
+
+
+// navbar
+.vp-navbar {
+
+  .nav-links {
+    font-size: 0.7em;
+  }
+
+  @media (min-width: 1200px) {
+    .vp-site-name {
+      background-color: var(--vp-c-accent-bg);
+      position: relative;
+      color: transparent;
+      background-clip: text;
+    }
+    .vp-site-name::after {
+      content: "开源宁波(NBopen)社区";
+      position: absolute;
+      left: 0;
+      background-image: linear-gradient(
+        120deg,
+        transparent 0%,
+        transparent 1rem, 2rem,
+        transparent 3.15rem,
+        transparent 100%
+      );
+      background-clip: text;
+      background-size: 200% 120%;
+      background-repeat: no-repeat;
+      animation: shine 5s infinite linear;
+    }
+
+    @keyframes shine {
+      0% {
+        background-position: 50% 0;
+      }
+      100% {
+        background-position: -190% 0;
+      }
+    }
+  }
+  
+}
+
+
+.compare-wrapper {
+  width: 100%;
+
+  .hint-container {
+    border: none;
+    &.info .compare-title {
+      background: #087cfa;
+    }
+
+    &.tip .compare-title {
+      background: #21d789;
+    }
+  }
+
+  .compare-title {
+    font-size: 22px;
+    border-radius: 0.2rem;
+    font-weight: 900;
+    color: var(--vp-c-black);
+    margin: 1rem 0;
+    padding: 0.5rem;
+
+    .icon {
+      margin: 0 0.25em;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+
+
+
+.custom-container {
+  margin: 1rem 0;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  color: inherit;
+}
+.custom-container-title {
+  font-size: 1.15rem;
+  font-weight: 900;
+}
+
+.vp-site-info-name {
+  border-bottom: none;
+  margin-top: 5px;
+}
+
+.vp-site-info{
+  width: calc(25% - 16px)
+}
+
+.vp-breadcrumb,.vp-page-title,[vp-content]:not(.custom),.vp-toc-placeholder{
+  max-width: 80%;
+}
+
+.search-box input{
+  text-indent: 1.5rem;
+}
+
+
