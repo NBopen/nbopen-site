@@ -7,6 +7,10 @@ export const zhNavbar = navbar([
     text: "项目",
     link: "/projects/",
   },
+  {
+    text: "🔥CSDN博客",
+    link: "https://nbopen.csdn.net/",
+  },
   // {
   //   text: "成员",
   //   link: "/member",

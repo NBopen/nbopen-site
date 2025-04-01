@@ -7,9 +7,9 @@ import { getAllFrontmatter } from "./getAllFrontmatter.js";
 export default hopeTheme(
   {
     hostname: "https://nbopen.github.io/nbopen-site",
-    logo: "/img/opennb.svg",
+    logo: "/img/nbopen.svg",
 
-    repo: "https://github.com/tianyios",
+    repo: "https://github.com/NBopen\n",
     docsDir: "docs",
     docsBranch: "master",
 
@@ -17,7 +17,7 @@ export default hopeTheme(
     displayFooter: true,
 
     pageInfo: false,
-    fullscreen: true,
+    fullscreen: false,
     editLink: false,
     contributors: false,
 
@@ -93,7 +93,7 @@ export default hopeTheme(
       // },
 
       icon: {
-        assets: "//at.alicdn.com/t/c/font_4865960_s8935eyizx.css",
+        assets: "//at.alicdn.com/t/c/font_4865960_n310hlksm.css",
       },
 
       notice: [
