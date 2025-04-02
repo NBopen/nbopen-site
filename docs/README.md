@@ -74,7 +74,7 @@ tinderProject:
   - name: 更多项目
     desc: NBopen所有项目
     logo:
-    url: /projects/
+    url: projects/
     preview: /img/site/empty-preview.svg
 ---
 

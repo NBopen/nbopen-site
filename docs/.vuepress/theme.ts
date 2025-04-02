@@ -9,7 +9,7 @@ export default hopeTheme(
     hostname: "https://nbopen.github.io/nbopen-site",
     logo: "/img/nbopen.svg",
 
-    repo: "https://github.com/NBopen\n",
+    repo: "https://github.com/NBopen",
     docsDir: "docs",
     docsBranch: "master",
 
