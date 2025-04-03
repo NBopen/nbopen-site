@@ -8,7 +8,7 @@ description: IDEA 版 Postman
 repos:
   - https://github.com/dromara/fast-request
   - https://gitee.com//dromara/fast-request
-badge: 推荐
+badge: 热门
 head:
   - - meta
     - name: 项目
