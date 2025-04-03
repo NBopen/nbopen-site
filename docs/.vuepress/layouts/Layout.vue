@@ -13,7 +13,6 @@ const frontmatter = usePageFrontmatter<ThemePageFrontmatter>();
 const page = usePageData();
 </script>
 <template>
-  <SkipLink />
   <CommonWrapper>
     <template #default>
       <HomePage v-if="frontmatter.home" />
