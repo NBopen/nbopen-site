@@ -58,7 +58,16 @@
 <!--            <img class="cover" :src="obj.cover" :alt="obj.title" />-->
             <el-row >
 <!--              <a class="project-title"  @click="goToDetail(obj.url)">{{ obj.title }}</a>-->
-              <span class="project-title">{{ obj.title }}</span>
+              
+              <span class="project-title" v-if="!obj.homepage"><img :src="obj.logo" :alt="obj.title" class="logo" v-if="obj.logo" />{{ obj.title }}</span>
+
+
+              <a class="project-title" v-if="obj.homepage"  :href="obj.homepage" target="_blank">
+                <img :src="obj.logo" :alt="obj.title" class="logo" v-if="obj.logo" />
+                {{ obj.title }}
+              </a>
+              
+              
               <el-tag
                   v-if="obj.badge"
                   :type="obj.badge === 'New' ? 'success' : obj.badge === '热门' ? 'danger': 'primary'"
@@ -75,8 +84,8 @@
             <div class="author-info">
               <div class="author-name">作者: {{ obj.author }}</div>
             </div>
-            <div class="repo-info">
-              <a v-for="repo in obj.repos"  :href="repo" target="_blank"><ColorIcon :icon="repo.indexOf('github')!= -1 ? 'github': repo.indexOf('gitee')!= -1?'gitee' : ''"  /></a>
+            <div class="repo-info" >
+              <a v-for="repo in obj.repos"  :href="repo" target="_blank" class="repo"><ColorIcon :icon="repo.indexOf('github')!= -1 ? 'github': repo.indexOf('gitee')!= -1?'gitee' : ''"  /></a>
             </div>
           </div>
         </div>
@@ -130,6 +139,8 @@ for (const frontmatter of allPagesFrontmatter) {
     if (groupedPages[headName] !== undefined ) {
       groupedPages[headName].push({
         cover: frontmatter.cover,
+        logo: frontmatter.logo,
+        homepage: frontmatter.homepage,
         tag: frontmatter.tag,
         title: frontmatter.title,
         description: frontmatter.description,
@@ -203,6 +214,10 @@ function goToDetail (url: string): void {
   display: none;
 }
 
+.external-link-icon [vp-content] a[target=_blank]:not(.no-external-link-icon)::after{
+  content: none;
+}
+
 .project-container {
   height: 422px;
   min-width: 200px;
@@ -236,6 +251,7 @@ function goToDetail (url: string): void {
     font-size: 26px;
     line-height: 28px;
   }
+ 
 }
 
 .project-main {
@@ -293,7 +309,12 @@ function goToDetail (url: string): void {
     text-align: center;
     margin: 120px 20px 0;
   }
-
+  .repo:not(:first-child){
+    margin-left: 5px;
+  }
+  .repo{
+    font-size: 25px;
+  }
   .card {
     padding: 16px;
     border-radius: 8px;
@@ -314,6 +335,12 @@ function goToDetail (url: string): void {
     align-self: stretch;
     border-radius: 8px;
     object-fit: contain;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 4px;
+    vertical-align: middle;
   }
   
 

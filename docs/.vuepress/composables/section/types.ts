@@ -17,6 +17,8 @@ export type GroupedSectionPages = Record<string, GroupedSectionPage[]>;
 
 export interface Project {
   cover: string
+  logo: string
+  homepage: string
   tag?: string[]
   title: string
   url: string

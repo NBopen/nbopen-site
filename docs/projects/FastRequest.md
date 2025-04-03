@@ -4,11 +4,13 @@ breadcrumb: false
 author: Kings
 date: 2024-09-24
 cover: https://api-buddy.cn/img/rfr.svg
+logo: https://api-buddy.cn/img/fastRequest.svg
+homepage: https://api-buddy.cn
 description: IDEA 版 Postman
 repos:
   - https://github.com/dromara/fast-request
   - https://gitee.com//dromara/fast-request
-badge: 热门
+badge: 推荐
 head:
   - - meta
     - name: 项目
