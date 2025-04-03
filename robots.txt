@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow:
+User-agent:*
+Disallow:
+
+Sitemap: https://nbopen.github.io/nbopen-site/nbopen-site/sitemap.xml
