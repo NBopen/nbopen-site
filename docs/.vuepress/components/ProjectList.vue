@@ -14,7 +14,7 @@
       </el-radio-group>
     </el-row>
   <el-row class="row-bg">
-    <el-col :span="3" class="content-aside">
+    <el-col :xs="24" :sm="8" :md="4" :lg="3" class="content-aside">
       <el-menu :collapse="false"
                default-active="-1"
                class="el-menu-vertical-demo"
@@ -48,7 +48,7 @@
         </template>
       </el-menu>
     </el-col>
-    <el-col :span="21" class="project-content-main">
+    <el-col :xs="24" :sm="18" :md="20" :lg="21" class="project-content-main">
       <template v-if="filteredSectionDetail.length">
         <div class="cards">
           <div
@@ -211,12 +211,11 @@ function goToDetail (url: string): void {
   justify-content: center;
   padding: 0 24px;
   background: url("/img/banner/project.png") no-repeat;
-  
   background-size: cover;
   background-position: center;
 
   @media (min-width: 960px) {
-    padding-left: 16rem;
+    padding-left: 6rem;
   }
 
   h1 {
@@ -239,12 +238,38 @@ function goToDetail (url: string): void {
   }
 }
 
-.project-main{
+.project-main {
   margin-top: 10px;
+
+  .row-bg {
+    display: flex;
+    flex-wrap: nowrap;
+
+    @media (max-width: 768px) {
+      .content-aside {
+        flex: 0 0 120px; /* 固定宽度 */
+        overflow-x: hidden;
+
+        .el-menu {
+          width: 120px;
+        }
+      }
+
+      .project-content-main {
+        flex: 1;
+        overflow-x: auto;
+      }
+    }
+  }
 }
 .project-content-main {
   padding: 10px 0 10px 10px;
-  
+  @media (max-width: 768px) {
+    .cards {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  }
 
   .cards {
     display: grid;
@@ -254,7 +279,6 @@ function goToDetail (url: string): void {
     @media (max-width: 600px) {
       grid-template-columns: 1fr;
       gap: 20px;
-      padding: 0 10vw;
     }
 
     @media (min-width: 840px) {
@@ -279,6 +303,10 @@ function goToDetail (url: string): void {
     grid-template-columns: 1fr;
     gap: 16px;
     cursor: pointer;
+  }
+
+  .card:hover {
+    background: #e0e0e0;
   }
 
   .cover {

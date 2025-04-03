@@ -199,7 +199,7 @@ text-align: -webkit-center;
   background-position: center;
 
   @media (min-width: 960px) {
-    padding-left: 16rem;
+    padding-left: 6rem;
   }
 
   h1 {

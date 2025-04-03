@@ -39,37 +39,37 @@ tinderProject:
     desc: 基于LLaMA2架构的音乐生成和理解模型
     logo: /img/site/yue.png
     url: https://github.com/multimodal-art-projection/YuE
-    preview: /img/site/yue-preview.png
+    preview: /img/site/yue-preview.jpeg
     repo: ['https://github.com/multimodal-art-projection/YuE']
   - name: F5-TTS
     desc: 基于流匹配的全非自回归文本到语音转换系统
-    logo: 
+    logo: /img/site/f5tts.png
     url: https://github.com/SWivid/F5-TTS
-    preview: /img/site/f5tts-preview.png
+    preview: /img/site/f5tts-preview.jpeg
     repo: ['https://github.com/SWivid/F5-TTS']
   - name: Step-Audio
     desc: 产品级开源语音交互模型
     logo: /img/site/stepAudio.png
     url: https://github.com/stepfun-ai/Step-Audio
-    preview: /img/site/stepAudio-preview.png
+    preview: /img/site/stepAudio-preview.jpeg
     repo: ['https://github.com/stepfun-ai/Step-Audio']  
   - name: also
     desc: 聚焦EDA数字逻辑的前端设计工具
-    logo: 
+    logo: /img/site/also.png
     url: https://gitee.com/zfchu/also
-    preview: /img/site/also-preview.png
+    preview: /img/site/also-preview.jpeg
     repo: ['https://gitee.com/zfchu/also'] 
   - name: 吾码Micro
     desc: 低代码平台
     logo: /img/site/micro.png
     url: https://gitee.com/ITdos/Dos.ORM
-    preview: /img/site/micro-preview.png
+    preview: /img/site/micro-preview.jpeg
     repo: ['https://gitee.com/ITdos/Dos.ORM'] 
   - name: RSIC-V适配工具集
     desc: 低代码流程设计器
-    logo:
+    logo: /img/site/riscv.png
     url: https://gitee.com/riscv-porting-tools
-    preview: /img/site/riscv-preview.png
+    preview: /img/site/rescv-preview.jpeg
     repo: ['https://gitee.com/riscv-porting-tools']
   - name: 更多项目
     desc: NBopen所有项目
