@@ -6,7 +6,7 @@ date: 2025-04-01
 cover: 
 description: 亿事达企业管理平台后端
 repos:
-  - https://github.com/SWivid/F5-TTS
+  - https://gitee.com/nbacheng/nbcio-boot
 badge: 
 head:
   - - meta
