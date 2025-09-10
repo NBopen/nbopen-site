@@ -59,7 +59,7 @@ tinderProject:
     url: https://gitee.com/zfchu/also
     preview: /img/site/also-preview.jpeg
     repo: ['https://gitee.com/zfchu/also'] 
-  - name: 吾码Microi
+  - name: Microi吾码
     desc: 低代码平台
     logo: /img/site/micro.png
     url: https://gitee.com/ITdos/Dos.ORM
