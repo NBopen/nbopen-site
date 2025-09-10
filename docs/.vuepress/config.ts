@@ -12,7 +12,7 @@ import ElementPlus from 'unplugin-element-plus/vite'
 export default defineUserConfig({
   title: "开源宁波(NBopen)社区",
   description: "宁波开源社区",
-  base:"/nbopen-site/",
+  // base:"/nbopen-site/",
   shouldPrefetch: false,
   head: [
     [
