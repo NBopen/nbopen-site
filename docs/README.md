@@ -60,7 +60,7 @@ tinderProject:
     preview: /img/site/also-preview.jpeg
     repo: ['https://gitee.com/zfchu/also'] 
   - name: Microi吾码
-    desc: 低代码平台
+    desc: 开源低代码平台
     logo: /img/site/micro.png
     url: https://gitee.com/ITdos/Dos.ORM
     preview: /img/site/micro-preview.jpeg
