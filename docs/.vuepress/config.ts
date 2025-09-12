@@ -27,17 +27,17 @@ export default defineUserConfig({
       { src: "//at.alicdn.com/t/c/font_4865960_9dt4mtz4xr9.js", async: true },
     ],
       
-    // ["script", { src: "/js/gtag.js", async: true }],
-    // [
-    //   "script",
-    //   {},
-    //   `
-    //   window.dataLayer = window.dataLayer || [];
-    //   function gtag(){dataLayer.push(arguments);}
-    //   gtag('js', new Date());
-    //   gtag('config', 'G-Y8G30ZWCYE');
-    // `,
-    // ],
+    ["script", { src: "/js/gtag.js", async: true }],
+    [
+      "script",
+      {},
+      `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-9EB01WZVWX');
+    `,
+    ],
     // ["script", { src: "https://cdn.wwads.cn/js/makemoney.js" }],
   ],
 
