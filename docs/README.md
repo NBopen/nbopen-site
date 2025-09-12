@@ -67,7 +67,7 @@ tinderProject:
     repo: ['https://gitee.com/ITdos/Dos.ORM'] 
   - name: RSIC-V适配工具集
     desc: 低代码流程设计器
-    logo: /img/site/riscv.png
+    logo: /img/site/rescv.png
     url: https://gitee.com/riscv-porting-tools
     preview: /img/site/rescv-preview.jpeg
     repo: ['https://gitee.com/riscv-porting-tools']
