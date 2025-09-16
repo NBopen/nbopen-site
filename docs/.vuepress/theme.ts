@@ -13,7 +13,7 @@ export default hopeTheme(
     docsDir: "docs",
     docsBranch: "master",
 
-    copyright: "Copyright © 2025-present NBopen",
+    copyright: "Copyright © 2025 NBopen.org.cn All Rights Reserved.",
     displayFooter: true,
 
     pageInfo: false,

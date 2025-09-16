@@ -32,8 +32,9 @@ const qrcodeOption = computed(() => [
 
 <template>
   <footer class="page-footer">
-    <!--
+    
     <div v-if="frontmatter.home" class="container">
+      <!--
       <div class="links">
         <template v-for="item in linkOption" :key="item.title">
           <div class="cate">
@@ -48,7 +49,7 @@ const qrcodeOption = computed(() => [
           </div>
         </template>
       </div>
-     
+     -->
       
       <div class="qrcode">
         <div v-for="item in qrcodeOption" :key="item.name">
@@ -56,7 +57,7 @@ const qrcodeOption = computed(() => [
             class="qrcode-desc"
             href="javascript:void(0);"
           >
-            <img class="qrcode_img" src="/img/qrcode_wx.webp" />
+            <img class="qrcode_img" src="/img/qrcode_wx.jpg" />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -76,14 +77,14 @@ const qrcodeOption = computed(() => [
         </div>
       </div>
     </div>
-    -->
+    
     <div class="copyright">
       <div>
         <h3 class="foot-org-title">开源宁波（NBopen）社区</h3>
         <p class="foot-org-slogan">宁波官⽅开源宣传和活动阵地，欢迎各位和我们共建开源⽣态体系！</p>
       </div>
       <p>
-        Copyright &copy;2025-{{ new Date().getFullYear() }}&nbsp;<a href="/">@OpenNb.org. All Rights Reserved</a>
+        Copyright &copy;2025 &nbsp;<a href="/">NBopen.org.cn</a> All Rights Reserved.
       </p>
     </div>
   </footer>
