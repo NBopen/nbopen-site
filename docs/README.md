@@ -52,9 +52,9 @@ tinderProject:
   - name: Step-Audio
     desc: 产品级开源语音交互模型
     logo: /img/site/stepAudio.png
-    url: https://github.com/stepfun-ai/Step-Audio
+    url: https://github.com/stepfun-ai/Step-Audio2
     preview: /img/site/stepAudio-preview.jpeg
-    repo: ['https://github.com/stepfun-ai/Step-Audio']
+    repo: ['https://github.com/stepfun-ai/Step-Audio2']
 
   - name: EDA工具集
     desc: 聚焦EDA数字逻辑的前端设计工具
